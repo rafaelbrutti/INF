@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <script src="test2.js"></script>
+    <title> TP5 </title>
+    <h1> Connected to the server </h1>
+
+    <div id="menu bar">
+
+      <button id="BUTSHO" type="button" onclick="show()">show txt </button>
+      <button id ="ADDB" type="button" onclick="add()">add element</button>
+      <button id ="CLEAR" type="button" onclick="clear()"> clear</button>
+      <button id ="REMOVE" type="button" onclick="remove()"> remove element</button>
+    </div>
+
+    <div>
+        <label for="indexTF" >Index</label>
+        <input type="text" id="indexTF" name="indexTF">
+
+        <button type="button"  id="SENDREM" onclick="remove()">Valid</button>
+    </div>
+
+
+    <form action="http://localhost:8000/bonjour" method="GET">
+      Name:<br>
+      <label> Write your name : </label>
+      <input type ="text" name = "name">
+      <button type="submit" value="Submit">
+    </form>
+  </body>
+</html>
